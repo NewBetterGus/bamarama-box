@@ -6,7 +6,8 @@ This module automatically opens Bamarama Boxes and deletes unwanted items. Optio
 
 Usage: Type "rootbeer" in your proxy chat to toggle.
 
-```Item Code
+```
+Item Code (to edit index.js file)
 Freeholds Root Beer             : 80078
 Shevranberry Wine               : 80079
 Sky Lotus Drink                 : 80080
@@ -16,5 +17,5 @@ Lein's Curly Wig(1-day Afro)    : 80089
 Melsa's Chef Hat(1-day Hat)     : 80090
 ```
 
-`Required`
+`Required`  
 https://github.com/pinkipi/command
