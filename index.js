@@ -12,6 +12,17 @@ const BAMARAMA_BOX = 80086,
 	ITEMS = [ROOT_BEER, ...Object.keys(TRASH).map(id => Number(id))]
 
 module.exports = function RootBeer(mod) {
+	mod.settings = {
+		autoTrash: true,
+		autoTrashItems: {
+		beer: true,
+		wine: true,
+		lotus: true,
+		moongourd: true,
+		afro: true,
+		chefHat: true
+		}
+	}
 	const {command} = mod.require
 
 	let hooks = [],
