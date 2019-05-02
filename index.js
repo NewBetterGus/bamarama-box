@@ -29,8 +29,8 @@ module.exports = function RootBeer(dispatch) {
 		else stop()
 	})
 
-	dispatch.hook('S_LOGIN', 9, event => { ({gameId} = event) })
-	dispatch.hook('C_PLAYER_LOCATION', 3, event => { lastLocation = event })
+	dispatch.hook('S_LOGIN', 13, event => { ({gameId} = event) })
+	dispatch.hook('C_PLAYER_LOCATION', 5, event => { lastLocation = event })
 
 	function openBox() {
 		dispatch.toServer('C_USE_ITEM', 3, {
@@ -67,7 +67,7 @@ module.exports = function RootBeer(dispatch) {
 	function load() {
 		let inventory = null
 
-		hook('S_INVEN', 12, event => {
+		hook('S_INVEN', 18, event => {
 			if(event.first) inventory = []
 			else if(!inventory) return
 
